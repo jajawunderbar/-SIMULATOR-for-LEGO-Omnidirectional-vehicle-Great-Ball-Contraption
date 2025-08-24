@@ -322,6 +322,8 @@ elif mode == 'Simulate Steps' and st.session_state.steps:
 
             ax.set_xticks(range(w))
             ax.set_yticks(range(h))
+            ax.set_xticklabels([xmap[xi] for xi in range(w)])
+            ax.set_yticklabels([ymap[yi] for yi in range(h)])
             ax.set_xlim(-0.5, w - 0.5)
             ax.set_ylim(-0.5, h - 0.5)
             ax.set_aspect('equal')
